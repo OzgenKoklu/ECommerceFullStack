@@ -9,8 +9,11 @@ Showcase for:
 -Linq usage: 
 ex: Product productToUpdate = _products.SingleOrDefault(p => p.ProductId == product.ProductId);
 Linq.Expressions :    List<T> GetAll(Expression<Func<T,bool>> filter =null);
+-Generic Constraint IEntityRepository<T> where T:class //sınırlama
+-Entity Framework - Object relational mapping -  Linq destekli . 
+-Working with Nuget packages: Entity Framework Sql Server , 
 
-
-
+-ORM basics > DbContext
+-IDisposable pattern for garbage collector using(Northwindcontext){}
 
 Reference: Engin Demiroğ - Kodlama.io 
