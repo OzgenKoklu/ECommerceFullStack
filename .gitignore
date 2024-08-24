@@ -1,0 +1,43 @@
+# Ignore all files in the root except the frontend and backend folders
+/*
+!.gitignore
+!/ECommerceBackendNorthwind/
+!/ECommerceFrontendAngular/
+
+# Backend (Visual Studio/ .NET)
+ECommerceBackendNorthwind/[Bb]in/
+ECommerceBackendNorthwind/[Oo]bj/
+ECommerceBackendNorthwind/*/.vs/
+ECommerceBackendNorthwind/*.user
+ECommerceBackendNorthwind/*.lock.json
+ECommerceBackendNorthwind/*.ide
+ECommerceBackendNorthwind/*.log
+ECommerceBackendNorthwind/*.suo
+ECommerceBackendNorthwind/*.psess
+ECommerceBackendNorthwind/*.vscode
+ECommerceBackendNorthwind/*.tsscache
+ECommerceBackendNorthwind/*/*.csproj.user
+ECommerceBackendNorthwind/*/*.csproj.vspscc
+ECommerceBackendNorthwind/*/*.csproj.nuget.cache
+ECommerceBackendNorthwind/*/project.lock.json
+ECommerceBackendNorthwind/packages/
+ECommerceBackendNorthwind/TestResults/
+ECommerceBackendNorthwind/*.nupkg
+ECommerceBackendNorthwind/nuget.exe
+ECommerceBackendNorthwind/NuGet.config
+ECommerceBackendNorthwind/NuGetScratch/
+ECommerceBackendNorthwind/_ReSharper.Caches/
+
+# Angular frontend
+ECommerceFrontendAngular/node_modules/
+ECommerceFrontendAngular/dist/
+ECommerceFrontendAngular/.angular/cache/
+ECommerceFrontendAngular/.angular/analytics/
+ECommerceFrontendAngular/.vscode/
+ECommerceFrontendAngular/.idea/
+ECommerceFrontendAngular/.env
+
+# General
+*.DS_Store
+*.env
+*.log
