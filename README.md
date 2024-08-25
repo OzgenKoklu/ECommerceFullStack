@@ -15,5 +15,7 @@ Linq.Expressions :    List<T> GetAll(Expression<Func<T,bool>> filter =null);
 
 -ORM basics > DbContext
 -IDisposable pattern for garbage collector using(Northwindcontext){}
+-Core Layer for database non-specific codes for minimum repetition
+-DTO's for joining SQL tables 
 
 Reference: Engin Demiroğ - Kodlama.io 
