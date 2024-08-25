@@ -3,6 +3,7 @@
 
 Learning Project for full stack development. Strictly follows the course material to have a grasp on enterprise architecture. https://www.kodlama.io/p/yazilim-gelistirici-yetistirme-kampi
 
+!!! README WORK IN PROGRESS !!!
 Showcase for: 
 -Enterprise architecture, DataAccess, Core, Business, Entity
 -Usage of interfaces. Eg: IEntity, IProductdal, Generic Repository Design Pattern - Add(T entity) 
@@ -17,5 +18,9 @@ Linq.Expressions :    List<T> GetAll(Expression<Func<T,bool>> filter =null);
 -IDisposable pattern for garbage collector using(Northwindcontext){}
 -Core Layer for database non-specific codes for minimum repetition
 -DTO's for joining SQL tables 
+-Results for requests/responses (success and error results for data and no data, multiple constructors) 
+
+
+!!! README WORK IN PROGRESS !!!
 
 Reference: Engin Demiroğ - Kodlama.io 
