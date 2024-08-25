@@ -18,8 +18,8 @@ Linq.Expressions :    List<T> GetAll(Expression<Func<T,bool>> filter =null);
 -IDisposable pattern for garbage collector using(Northwindcontext){}
 -Core Layer for database non-specific codes for minimum repetition
 -DTO's for joining SQL tables 
--Results for requests/responses (success and error results for data and no data, multiple constructors) 
-
+-Results for requests/responses (success and error results for data and no data, multiple constructors - Result(bool success, string message ): this(bool success)  - Result(bool succes)  
+-ASP.Net Core Web Api - Restful architecture / json format - get/post etc - postman usage 
 
 !!! README WORK IN PROGRESS !!!
 
