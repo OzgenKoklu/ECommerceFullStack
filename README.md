@@ -20,6 +20,9 @@ Linq.Expressions :    List<T> GetAll(Expression<Func<T,bool>> filter =null);
 -DTO's for joining SQL tables 
 -Results for requests/responses (success and error results for data and no data, multiple constructors - Result(bool success, string message ): this(bool success)  - Result(bool succes)  
 -ASP.Net Core Web Api - Restful architecture / json format - get/post etc - postman usage 
+-Autofac for IoC container,
+-Fluent validation
+-AOP
 
 !!! README WORK IN PROGRESS !!!
 
