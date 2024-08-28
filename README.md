@@ -22,7 +22,8 @@ Linq.Expressions :    List<T> GetAll(Expression<Func<T,bool>> filter =null);
 -ASP.Net Core Web Api - Restful architecture / json format - get/post etc - postman usage 
 -Autofac for IoC container,
 -Fluent validation
--AOP
+-Aspect oriented programming using Autofac 
+
 
 !!! README WORK IN PROGRESS !!!
 

@@ -4,10 +4,10 @@ using DataAccess.Abstract;
 using Entities.DTOs;
 using Core.Utilities.Results;
 using Business.Constants;
+using Core.Aspects.Autofac.Validation;
 
-using FluentValidation;
-using Core.CrossCuttingConcerns.Validation;
 using Business.ValidationRules.FluentValidation;
+
 
 namespace Business.Concrete
 {
@@ -19,11 +19,11 @@ namespace Business.Concrete
             _productDal = productDal;
         }
 
-        //[ValidationAspect(typeof(ProductValidator))]
+        [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {
             //BUSINESS LOGIC - COMPANY CAN HAVE SOME REQUESTS
-            ValidationTool.Validate(new ProductValidator(), product);
+            //ValidationTool.Validate(new ProductValidator(), product);
 
             _productDal.Add(product);
 
