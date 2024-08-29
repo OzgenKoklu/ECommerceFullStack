@@ -23,7 +23,9 @@ Linq.Expressions :    List<T> GetAll(Expression<Func<T,bool>> filter =null);
 -Autofac for IoC container,
 -Fluent validation
 -Aspect oriented programming using Autofac 
-
+-JWT creation/ Authorization, claims 
+-Hashing & use of System.Security.Cryptograpgy
+-Class Extensions - E.g.: ClaimExtensions, ClaimsPrincipalExtensions.
 
 !!! README WORK IN PROGRESS !!!
 
