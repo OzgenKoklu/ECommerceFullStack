@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using Core.DependencyResolvers;
 using Core.Utilities.IoC;
 using Core.Extensions;
+using System.Text;
 
 
 var builder = WebApplication.CreateBuilder(args);

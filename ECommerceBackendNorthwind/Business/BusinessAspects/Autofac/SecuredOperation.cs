@@ -16,13 +16,26 @@ namespace Business.BusinessAspects.Autofac
         public SecuredOperation(string roles)
         {
             _roles = roles.Split(',');
-           _httpContextAccessor = ServiceTool.ServiceProvider.GetService<IHttpContextAccessor>();
+            _httpContextAccessor = ServiceTool.ServiceProvider.GetService<IHttpContextAccessor>();
 
         }
-        
+
         protected override void OnBefore(IInvocation invocation)
         {
-            var roleClaims = _httpContextAccessor.HttpContext.User.ClaimRoles();
+            var user = _httpContextAccessor.HttpContext.User;
+            if (user == null)
+            {
+                Console.WriteLine("User is null.");
+                throw new Exception("User is null");
+            }
+
+            Console.WriteLine("Listing all claims from User:");
+            foreach (var claim in user.Claims)
+            {
+                Console.WriteLine($"Type: {claim.Type}, Value: {claim.Value}");
+            }
+
+            var roleClaims = user.ClaimRoles(); // This is the extension method
             foreach (var role in _roles)
             {
                 if (roleClaims.Contains(role))
@@ -30,6 +43,7 @@ namespace Business.BusinessAspects.Autofac
                     return;
                 }
             }
+
             throw new Exception(Messages.AuthorizationDenied);
         }
     }
