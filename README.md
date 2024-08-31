@@ -26,7 +26,11 @@ Linq.Expressions :    List<T> GetAll(Expression<Func<T,bool>> filter =null);
 -JWT creation/ Authorization, claims 
 -Hashing & use of System.Security.Cryptograpgy
 -Class Extensions - E.g.: ClaimExtensions, ClaimsPrincipalExtensions.
--ServiceCollection extending for dependency injection for Aspects
+-ServiceCollection extending for dependency injection for Aspects**
+
+-Angular Frontent 
+Bootstrap for styling
+
 
 !!! README WORK IN PROGRESS !!!
 
