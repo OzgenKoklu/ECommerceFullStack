@@ -31,7 +31,7 @@ Linq.Expressions :    List<T> GetAll(Expression<Func<T,bool>> filter =null);
 -Angular Frontent 
 Bootstrap for styling
 Data handling for frontend
-
+Angular - Routing 
 
 
 !!! README WORK IN PROGRESS !!!
