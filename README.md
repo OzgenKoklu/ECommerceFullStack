@@ -32,6 +32,8 @@ Linq.Expressions :    List<T> GetAll(Expression<Func<T,bool>> filter =null);
 Bootstrap for styling
 Data handling for frontend
 Angular - Routing 
+Angular - Pipes, filters - ngModel / banana notation  / forms module
+
 
 
 !!! README WORK IN PROGRESS !!!
