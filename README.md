@@ -27,12 +27,15 @@ Linq.Expressions :    List<T> GetAll(Expression<Func<T,bool>> filter =null);
 -Hashing & use of System.Security.Cryptograpgy
 -Class Extensions - E.g.: ClaimExtensions, ClaimsPrincipalExtensions.
 -ServiceCollection extending for dependency injection for Aspects**
+-Middleware usage for error handing / for validation errors.
 
 -Angular Frontent 
 Bootstrap for styling
 Data handling for frontend
 Angular - Routing 
 Angular - Pipes, filters - ngModel / banana notation  / forms module
+Toastr for onscreen notifications
+Formbuilder, adding data to database through frontend
 
 
 
