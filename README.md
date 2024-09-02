@@ -28,6 +28,7 @@ Linq.Expressions :    List<T> GetAll(Expression<Func<T,bool>> filter =null);
 -Class Extensions - E.g.: ClaimExtensions, ClaimsPrincipalExtensions.
 -ServiceCollection extending for dependency injection for Aspects**
 -Middleware usage for error handing / for validation errors.
+-Caching - Cache aspect
 
 -Angular Frontent 
 Bootstrap for styling
