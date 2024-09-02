@@ -6,12 +6,13 @@ import { CategoryComponent } from './components/category/category.component';
 import { NaviComponent } from './components/navi/navi.component';
 import { CartSummaryComponent } from './components/cart-summary/cart-summary.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, ProductComponent, CategoryComponent, NaviComponent, CartSummaryComponent, ProductAddComponent],
+  imports: [RouterOutlet, CommonModule, ProductComponent, CategoryComponent, NaviComponent, CartSummaryComponent, ProductAddComponent, LoginComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

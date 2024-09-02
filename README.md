@@ -37,6 +37,7 @@ Angular - Routing
 Angular - Pipes, filters - ngModel / banana notation  / forms module
 Toastr for onscreen notifications
 Formbuilder, adding data to database through frontend
+Login 
 
 
 
