@@ -1,46 +1,47 @@
-# ECommerceFullStack
- E-Commerce website with backend & frontend
+# E-Commerce FullStack
 
-Learning Project for full stack development. Strictly follows the course material to have a grasp on enterprise architecture. https://www.kodlama.io/p/yazilim-gelistirici-yetistirme-kampi
+An E-Commerce website built with a full stack development approach, including both backend and frontend components. This project strictly follows course material to understand enterprise architecture effectively. For more details, refer to the [course link](https://www.kodlama.io/p/yazilim-gelistirici-yetistirme-kampi).
 
-!!! README WORK IN PROGRESS !!!
-Showcase for: 
--Enterprise architecture, DataAccess, Core, Business, Entity
--Usage of interfaces. Eg: IEntity, IProductdal, Generic Repository Design Pattern - Add(T entity) 
--Linq usage: 
-ex: Product productToUpdate = _products.SingleOrDefault(p => p.ProductId == product.ProductId);
-Linq.Expressions :    List<T> GetAll(Expression<Func<T,bool>> filter =null);
--Generic Constraint IEntityRepository<T> where T:class //sınırlama
--Entity Framework - Object relational mapping -  Linq destekli . 
--Working with Nuget packages: Entity Framework Sql Server , 
+## Project Overview
 
--ORM basics > DbContext
--IDisposable pattern for garbage collector using(Northwindcontext){}
--Core Layer for database non-specific codes for minimum repetition
--DTO's for joining SQL tables 
--Results for requests/responses (success and error results for data and no data, multiple constructors - Result(bool success, string message ): this(bool success)  - Result(bool succes)  
--ASP.Net Core Web Api - Restful architecture / json format - get/post etc - postman usage 
--Autofac for IoC container,
--Fluent validation
--Aspect oriented programming using Autofac 
--JWT creation/ Authorization, claims 
--Hashing & use of System.Security.Cryptograpgy
--Class Extensions - E.g.: ClaimExtensions, ClaimsPrincipalExtensions.
--ServiceCollection extending for dependency injection for Aspects**
--Middleware usage for error handing / for validation errors.
--Caching - Cache aspect
+### Backend: .NET Core
 
--Angular Frontent 
-Bootstrap for styling
-Data handling for frontend
-Angular - Routing 
-Angular - Pipes, filters - ngModel / banana notation  / forms module
-Toastr for onscreen notifications
-Formbuilder, adding data to database through frontend
-Login 
+The backend is developed using .NET Core and showcases several enterprise architecture concepts and design patterns:
 
+- **Enterprise Architecture**: Organized into Data Access, Core, Business, and Entity layers.
+- **Usage of Interfaces**: Implementing interfaces such as `IEntity`, `IProductDal`, and the Generic Repository Design Pattern (`Add(T entity)`).
+- **LINQ Usage**: Examples include filtering and selecting data, e.g., `Product productToUpdate = _products.SingleOrDefault(p => p.ProductId == product.ProductId);`.
+- **LINQ Expressions**: Generic filtering using expressions, e.g., `List<T> GetAll(Expression<Func<T, bool>> filter = null);`.
+- **Generic Constraints**: Applying constraints, e.g., `IEntityRepository<T> where T : class`.
+- **Entity Framework**: Object-Relational Mapping (ORM) with LINQ support, basic ORM concepts like `DbContext`.
+- **IDisposable Pattern**: Used for garbage collection, e.g., `using (NorthwindContext) {}`.
+- **Core Layer**: Contains database-agnostic code to minimize repetition.
+- **DTOs (Data Transfer Objects)**: Used for joining SQL tables and transferring data.
+- **Result Handling**: Custom result classes for handling requests and responses (success and error results for both data and non-data scenarios).
+- **ASP.NET Core Web API**: RESTful architecture with JSON format support for GET/POST operations, demonstrated using Postman.
+- **Autofac for IoC (Inversion of Control) Container**: Managing dependencies and supporting aspect-oriented programming.
+- **Fluent Validation**: For input validation.
+- **Aspect-Oriented Programming**: Implemented using Autofac.
+- **JWT (JSON Web Tokens) for Authentication**: Handling authorization and claims.
+- **Hashing**: Utilizes `System.Security.Cryptography` for secure hashing.
+- **Class Extensions**: Includes examples like `ClaimExtensions`, `ClaimsPrincipalExtensions`.
+- **ServiceCollection Extensions**: For dependency injection, particularly for Aspects.
+- **Middleware Usage**: For error handling and validation errors.
+- **Caching**: Implemented cache aspect for performance optimization.
 
+### Frontend: Angular
 
-!!! README WORK IN PROGRESS !!!
+The frontend is developed using Angular with several features:
 
-Reference: Engin Demiroğ - Kodlama.io 
+- **Bootstrap**: For styling and responsive design.
+- **Data Handling**: Efficient data management on the frontend.
+- **Angular Routing**: For navigation between different pages.
+- **Pipes and Filters**: Data transformation using Angular Pipes and filters.
+- **Forms Module**: Usage of `ngModel`, "banana in a box" notation, and FormBuilder.
+- **Toastr for Notifications**: On-screen notifications for user interactions.
+- **Data Addition through Forms**: Utilizing FormBuilder to add data to the database.
+- **Authentication and Authorization**: Handling login and tokens using local storage, interceptors for token tracking, and guards for route protection.
+
+### References
+
+- Engin Demiroğ - [Kodlama.io](https://www.kodlama.io/courses/1235979/)
